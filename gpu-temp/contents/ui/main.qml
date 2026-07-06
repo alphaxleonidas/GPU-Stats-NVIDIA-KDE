@@ -4,6 +4,7 @@ import QtQml 2.15
 import org.kde.plasma.plasmoid 2.0
 import org.kde.plasma.plasma5support as Plasma5Support
 import org.kde.plasma.components as PC3
+import org.kde.plasma.core 2.0 as PlasmaCore   // <-- ADDED for theme-aware colors
 
 PlasmoidItem {
     id: root
@@ -62,14 +63,15 @@ PlasmoidItem {
         var totalGB = (memTotal / 1024).toFixed(0);
 
         gpuText = "GPU: " + power + "W | " + temp + "°C";
-        tempLabel.text = temp + "°C";  // New: Temp only (no "Temp:")
-        oldTempLabel.text = "Temp:";   // Old: Static label, transparent when no data
+        tempLabel.text = temp + "°C";
+        oldTempLabel.text = "Temp:";
         utilLabel.text = "Util: " + util + "%";
         vramLabel.text = "VRAM: " + usedGB + "/" + totalGB + "GB";
         powerLabel.text = "Power: " + power + "W";
 
         var t = parseInt(temp);
         if (t > 80) {
+            // Red – warning
             textItem.color = "#ff4444";
             tempLabel.color = "#ff4444";
             oldTempLabel.color = "#ff4444";
@@ -77,6 +79,7 @@ PlasmoidItem {
             vramLabel.color = "#ff4444";
             powerLabel.color = "#ff4444";
         } else if (t > 65) {
+            // Orange – caution
             textItem.color = "#ff8800";
             tempLabel.color = "#ff8800";
             oldTempLabel.color = "#ff8800";
@@ -84,12 +87,13 @@ PlasmoidItem {
             vramLabel.color = "#ff8800";
             powerLabel.color = "#ff8800";
         } else {
-            textItem.color = "#000000";
-            tempLabel.color = "#000000";
-            oldTempLabel.color = "#000000";
-            utilLabel.color = "#000000";
-            vramLabel.color = "#000000";
-            powerLabel.color = "#000000";
+            // Cool – use system text color (white on dark, black on light)
+            textItem.color = PlasmaCore.Theme.textColor;   // <-- CHANGED
+            tempLabel.color = PlasmaCore.Theme.textColor;  // <-- CHANGED
+            oldTempLabel.color = PlasmaCore.Theme.textColor; // <-- CHANGED
+            utilLabel.color = PlasmaCore.Theme.textColor;  // <-- CHANGED
+            vramLabel.color = PlasmaCore.Theme.textColor;  // <-- CHANGED
+            powerLabel.color = PlasmaCore.Theme.textColor; // <-- CHANGED
         }
     }
 
@@ -125,7 +129,7 @@ PlasmoidItem {
 
             Item { Layout.preferredHeight: 8; Layout.fillWidth: true }
 
-            RowLayout {  // New row for split Temp label + value
+            RowLayout {
                 Layout.alignment: Qt.AlignHCenter
                 Layout.fillWidth: true
 
@@ -134,7 +138,7 @@ PlasmoidItem {
                     text: "Temp:"
                     font.pixelSize: 12
                     font.bold: false
-                    opacity: tempLabel.text === "--°C" ? 0.3 : 1.0  // Transparent when no data
+                    opacity: tempLabel.text === "--°C" ? 0.3 : 1.0
                 }
 
                 PC3.Label {
