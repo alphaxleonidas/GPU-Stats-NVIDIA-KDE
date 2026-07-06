@@ -63,7 +63,7 @@ PlasmoidItem {
         var totalGB = (memTotal / 1024).toFixed(0);
 
         // --- Choose how you want Parameters to appear on the Taskbar (default: all) ---
-        gpuText = "GPU: " + util + "% | " + usedGB + "/" + totalGB + "GB | " + power + "W | " + temp + "°C"                  ;
+        gpuText = "GPU: " + util + "% | " + usedGB + "/" + totalGB + "GB | " + power + "W | " + temp + "°C                                                                 ";
         // -----------------------------------
 
         tempLabel.text = temp + "°C";
