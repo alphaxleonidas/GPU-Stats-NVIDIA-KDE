@@ -4,12 +4,12 @@ import QtQml 2.15
 import org.kde.plasma.plasmoid 2.0
 import org.kde.plasma.plasma5support as Plasma5Support
 import org.kde.plasma.components as PC3
-import org.kde.plasma.core 2.0 as PlasmaCore   // <-- ADDED for theme-aware colors
+import org.kde.plasma.core 2.0 as PlasmaCore
 
 PlasmoidItem {
     id: root
     width: 360
-    height: 160  // Increased height for extra line
+    height: 160
 
     property string gpuText: "GPU: --"
     property var ds
@@ -62,7 +62,10 @@ PlasmoidItem {
         var usedGB = (memUsed / 1024).toFixed(1);
         var totalGB = (memTotal / 1024).toFixed(0);
 
-        gpuText = "GPU: " + power + "W | " + temp + "°C";
+        // --- Choose how you want Parameters to appear on the Taskbar (default: all) ---
+        gpuText = "GPU: " + util + "% | " + usedGB + "/" + totalGB + "GB | " + power + "W | " + temp + "°C";
+        // -----------------------------------
+
         tempLabel.text = temp + "°C";
         oldTempLabel.text = "Temp:";
         utilLabel.text = "Util: " + util + "%";
@@ -71,7 +74,6 @@ PlasmoidItem {
 
         var t = parseInt(temp);
         if (t > 80) {
-            // Red – warning
             textItem.color = "#ff4444";
             tempLabel.color = "#ff4444";
             oldTempLabel.color = "#ff4444";
@@ -79,7 +81,6 @@ PlasmoidItem {
             vramLabel.color = "#ff4444";
             powerLabel.color = "#ff4444";
         } else if (t > 65) {
-            // Orange – caution
             textItem.color = "#ff8800";
             tempLabel.color = "#ff8800";
             oldTempLabel.color = "#ff8800";
@@ -87,13 +88,13 @@ PlasmoidItem {
             vramLabel.color = "#ff8800";
             powerLabel.color = "#ff8800";
         } else {
-            // Cool – use system text color (white on dark, black on light)
-            textItem.color = PlasmaCore.Theme.textColor;   // <-- CHANGED
-            tempLabel.color = PlasmaCore.Theme.textColor;  // <-- CHANGED
-            oldTempLabel.color = PlasmaCore.Theme.textColor; // <-- CHANGED
-            utilLabel.color = PlasmaCore.Theme.textColor;  // <-- CHANGED
-            vramLabel.color = PlasmaCore.Theme.textColor;  // <-- CHANGED
-            powerLabel.color = PlasmaCore.Theme.textColor; // <-- CHANGED
+            // System text color – white on dark, black on light
+            textItem.color = PlasmaCore.Theme.textColor;
+            tempLabel.color = PlasmaCore.Theme.textColor;
+            oldTempLabel.color = PlasmaCore.Theme.textColor;
+            utilLabel.color = PlasmaCore.Theme.textColor;
+            vramLabel.color = PlasmaCore.Theme.textColor;
+            powerLabel.color = PlasmaCore.Theme.textColor;
         }
     }
 
