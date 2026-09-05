@@ -1,0 +1,34 @@
+
+            textItem.color = "orange";
+        else
+            textItem.color = "white";
+    }
+    
+    Timer {
+        interval: 2000
+        running: true
+        repeat: true
+        onTriggered: updateGpu()
+    }
+    
+    Component.onCompleted: {
+        initDataSource();
+        updateGpu();
+    }
+    
+    ColumnLayout {
+        anchors.fill: parent
+        
+        PC3.Label {
+            id: textItem
+            text: root.gpuText
+            font.bold: true
+            Layout.alignment: Qt.AlignCenter
+        }
+        
+        PC3.Label { id: tempLabel; text: "Temp: --°C" }
+        PC3.Label { id: utilLabel; text: "Utilization: --%" }
+        PC3.Label { id: vramLabel; text: "VRAM: -- / -- GB" }
+        PC3.Label { id: powerLabel; text: "Power: -- W" }
+    }
+}

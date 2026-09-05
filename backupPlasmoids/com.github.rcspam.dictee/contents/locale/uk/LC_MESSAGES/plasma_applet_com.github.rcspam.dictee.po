@@ -1,0 +1,505 @@
+# Ukrainian translations for Dictée plasmoid.
+# Copyright (C) 2024 rcspam
+# This file is distributed under the same license as the dictee package.
+# rcspam <rcspams@gmail.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_applet_com.github.rcspam.dictee 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-03 21:34+0200\n"
+"PO-Revision-Date: 2024-01-01 00:00+0000\n"
+"Last-Translator: rcspam <rcspams@gmail.com>\n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Another Dictée widget is active"
+msgstr "Інший віджет Dictée активний"
+
+msgid ""
+"Two instances on the same panel or desktop cause conflicts — duplicated "
+"daemon start/stop calls and races on the backend config. This widget is "
+"passive until the other is removed."
+msgstr ""
+"Дві копії на одній панелі чи стільниці спричиняють конфлікти — повторні "
+"виклики запуску/зупинки демона та стани гонитви в конфігурації бекенда. Цей "
+"віджет залишається пасивним, доки інший не буде вилучено."
+
+msgid ""
+"Right-click this widget in the panel, then choose \"Remove\" to clean up."
+msgstr ""
+"Клацніть правою кнопкою миші на цьому віджеті на панелі, а потім виберіть "
+"«Вилучити», щоб прибрати."
+
+msgid "Take over anyway"
+msgstr "Все одно перехопити"
+
+msgid ""
+"Force this widget to become active. The other instance will become passive "
+"at the next refresh (3 s)."
+msgstr ""
+"Примусово зробити цей віджет активним. Інша копія стане пасивною під час "
+"наступного оновлення (3 с)."
+
+msgid "Dictée"
+msgstr "Dictée"
+
+msgid "Unpin popup"
+msgstr "Відкріпити спливаюче вікно"
+
+msgid "Pin popup"
+msgstr "Закріпити спливаюче вікно"
+
+msgid "Not installed"
+msgstr "Не встановлено"
+
+msgid "Not configured"
+msgstr "Не налаштовано"
+
+msgid "Stopped"
+msgstr "Зупинено"
+
+msgid "Active"
+msgstr "Активний"
+
+msgid "Recording…"
+msgstr "Запис…"
+
+msgid "Transcribing…"
+msgstr "Транскрипція…"
+
+msgid "Switching…"
+msgstr "Перемикання…"
+
+msgid "Preparing…"
+msgstr "Підготовка..."
+
+msgid "Diarize ready"
+msgstr "Діаризація готова"
+
+msgid "Diarizing…"
+msgstr "Діаризація…"
+
+msgid "Start daemon"
+msgstr "Запустити daemon"
+
+msgid "Stop daemon"
+msgstr "Зупинити daemon"
+
+msgid "Press the Configure Dictée button below to get started."
+msgstr "Натисніть кнопку «Налаштувати Dictée» нижче, щоб розпочати."
+
+msgid "Dictation"
+msgstr "Диктант"
+
+msgid "Translate"
+msgstr "Перекласти"
+
+msgid "Preparing… (click to cancel)"
+msgstr "Підготовка… (натисніть для скасування)"
+
+msgid "Start meeting"
+msgstr "Почати зустріч"
+
+msgid "Meeting in progress…"
+msgstr "Зустріч триває…"
+
+msgid "Stop meeting"
+msgstr "Зупинити зустріч"
+
+msgid "Meeting"
+msgstr "Зустріч"
+
+msgid "Sortformer model not installed. Configure in dictee-setup."
+msgstr "Модель Sortformer не встановлено. Налаштуйте в dictee-setup."
+
+msgid "Freeing GPU memory..."
+msgstr "Звільнення пам'яті GPU..."
+
+msgid "Click to start recording with speaker identification"
+msgstr "Натисн��ть, щоб почати запис з ідентифікацією мовців"
+
+msgid "Click to stop and identify speakers"
+msgstr "Натисніть, щоб зупинити та ідентифікувати мовців"
+
+msgid "Record and identify speakers (max 4)"
+msgstr "Записати та ідентифікувати мовців (макс. 4)"
+
+msgid "Last transcription:"
+msgstr "Остання транскрипція:"
+
+msgid "ASR:"
+msgstr "ASR:"
+
+msgid "LLM"
+msgstr "LLM"
+
+msgid ""
+"Enable LLM post-processing (grammar and spell correction via local Ollama "
+"model)."
+msgstr ""
+"Увімкнути LLM-постобробку (виправлення граматики та орфографії через "
+"локальну модель Ollama)."
+
+msgid "Context"
+msgstr "Контекст"
+
+msgid ""
+"Accumulate audio from previous dictations to improve recognition of short or "
+"technical words."
+msgstr ""
+"Накопичувати аудіо з попередніх диктувань для покращення розпізнавання "
+"коротких або технічних слів."
+
+msgid "Short"
+msgstr "Короткий"
+
+msgid "Enable short-text fix on both normal and translation pipelines."
+msgstr ""
+"Увімкнути виправлення короткого тексту в обох конвеєрах (звичайному та "
+"перекладу)."
+
+msgid "Translation:"
+msgstr "Переклад:"
+
+msgid "LT arrêté"
+msgstr "LT зупинено"
+
+msgid "Ollama arrêté"
+msgstr "Ollama зупинено"
+
+msgid "Modèle absent"
+msgstr "Модель відсутня"
+
+msgid "Target language — add languages in Configure Dictée (LibreTranslate)"
+msgstr "Мова перекладу — додати мови в Налаштування Dictée (LibreTranslate)"
+
+msgid "Target language for translation"
+msgstr "Мова перекладу"
+
+msgid "Transcribe file"
+msgstr "Транскрибувати файл"
+
+msgid "Open an audio file for transcription"
+msgstr "Відкрити аудіофайл для транскрипції"
+
+msgid "Configure Dictée"
+msgstr "Налаштувати Dictée"
+
+msgid "Open dictee-setup to configure ASR, translation, shortcuts"
+msgstr ""
+"Відкрити dictee-setup для налаштування ASR, перекладу і комбінаційВідкрити "
+"dictee-setup для налаштування ASR, перекладу, комбінацій клавіш"
+
+msgid "Toggle voice commands cheatsheet"
+msgstr "Показати/сховати шпаргалку голосових команд"
+
+msgid "Reset everything — stop all processes, restart daemon"
+msgstr "Скинути все — зупинити процеси, перезапустити демон"
+
+msgid "Live microphone animation preview"
+msgstr "Попередній перегляд анімації мікрофона"
+
+msgid "Microphone muted — click to unmute"
+msgstr "Мікрофон вимкнено — натисніть, щоб увімкнути"
+
+msgid "Microphone — click to mute"
+msgstr "Мікрофон — натисніть для вимкнення"
+
+#, javascript-format
+msgid "Microphone volume: %1%"
+msgstr "Гучність мікрофона: %1%"
+
+msgid "Dictée not installed"
+msgstr "Dictée не встановлено"
+
+msgid "Dictée not configured — run dictee-setup"
+msgstr "Dictée не налаштовано — запустіть dictee-setup"
+
+msgid "Daemon stopped"
+msgstr "Daemon зупинено"
+
+msgid "Daemon active"
+msgstr "Daemon активний"
+
+msgid "Switching backend…"
+msgstr "Перемикання backend…"
+
+msgid "Calibration done!"
+msgstr "Калібрування завершено!"
+
+msgid "Calibration failed"
+msgstr "Калібрування не вдалося"
+
+msgid "General"
+msgstr "Загальне"
+
+msgid "Polling interval (ms):"
+msgstr "Інтервал опитування (мс):"
+
+msgid "How often the widget checks if the daemon is running (in milliseconds)."
+msgstr "Як часто віджет перевіряє, чи працює daemon (у мілісекундах)."
+
+msgid "Show last transcription:"
+msgstr "Показати останню транскрипцію:"
+
+msgid "Display the last transcribed text in the popup window."
+msgstr "Відображати останній транскрибований текст у спливаючому вікні."
+
+msgid "Preview mode (test with mic):"
+msgstr "Режим попереднього перегляду (тест з мікрофоном):"
+
+msgid "Audio context buffer:"
+msgstr "Буфер аудіоконтексту:"
+
+msgid "Microphone volume:"
+msgstr "Гучність мікрофона:"
+
+msgid ""
+"Adjust the microphone input volume (PipeWire/PulseAudio default source)."
+msgstr ""
+"Налаштувати вхідну гучність мікрофона (джерело за замовчуванням PipeWire/"
+"PulseAudio)."
+
+msgid "Noise floor:"
+msgstr "Рівень шуму:"
+
+msgid "Calibrate"
+msgstr "Калібрувати"
+
+msgid "Recording silence…"
+msgstr "Запис тиші…"
+
+msgid ""
+"Record 5 seconds of silence to calibrate the background noise level. This "
+"improves animation accuracy."
+msgstr ""
+"Запишіть 5 секунд тиші для калібрування рівня фонового шуму. Це покращує "
+"точність анімації."
+
+msgid "Noise gate:"
+msgstr "Noise gate:"
+
+msgid ""
+"Audio levels below this threshold are zeroed. Increase to suppress "
+"background noise and get clean silence."
+msgstr ""
+"Рівні звуку нижче цього порогу обнуляються. Збільшіть для придушення "
+"фонового шуму та отримання чистої тиші."
+
+msgid "Envelope shape:"
+msgstr "Форма огинаючої:"
+
+msgid "Flat"
+msgstr "Плоска"
+
+msgid "Normal"
+msgstr "Нормальна"
+
+msgid ""
+"Controls the Hanning envelope shape. 0 = flat (uniform bars), 1 = normal, "
+"higher = more peaked at the center."
+msgstr ""
+"Контролює форму огинаючої Ганна. 0 = плоска (рівномірні смуги), 1 = "
+"нормальна, більше = більш загострена в центрі."
+
+msgid "Envelope center:"
+msgstr "Центр огинаючої:"
+
+msgid ""
+"Shift the envelope peak across the frequency range (80–4000 Hz). Useful with "
+"rainbow colors to emphasize different frequency bands."
+msgstr ""
+"Зсунути пік огинаючої по діапазону частот (80–4000 Гц). Корисно з "
+"веселковими кольорами для виділення різних частотних смуг."
+
+msgid "Animation"
+msgstr "Анімація"
+
+msgid "Reset icon settings:"
+msgstr "Скинути параметри значка:"
+
+msgid "Reset to defaults"
+msgstr "Скинути до типових значень"
+
+msgid ""
+"Restore all icon animation settings (style, bars, wave, pulse, dots, "
+"waveform, rainbow, sensitivity, envelope, noise gate) to their installation "
+"defaults. Other preferences (polling, transcription display, audio context) "
+"are not affected."
+msgstr ""
+"Відновити всі налаштування анімації піктограми (стиль, смуги, хвиля, "
+"пульсація, точки, форма хвилі, веселка, чутливість, обвідна, шумовий поріг) "
+"до типових значень встановлення. Інші параметри (опитування, відображення "
+"транскрипції, аудіоконтекст) не зачіпаються."
+
+msgid "Reset icon settings"
+msgstr "Скинути параметри значка"
+
+msgid ""
+"All icon animation settings will be restored to defaults.\n"
+"Continue?"
+msgstr ""
+"Усі налаштування анімації піктограми буде відновлено до типових значень.\n"
+"Продовжити?"
+
+msgid "Animation style:"
+msgstr "Стиль анімації:"
+
+msgid "Bars (default)"
+msgstr "Смуги (за замовчуванням)"
+
+msgid "Wave"
+msgstr "Хвиля"
+
+msgid "Pulse"
+msgstr "Пульс"
+
+msgid "Dots"
+msgstr "Крапки"
+
+msgid "Waveform"
+msgstr "Хвильова форма"
+
+msgid "Rainbow colors:"
+msgstr "Веселкові кольори:"
+
+msgid "Start hue:"
+msgstr "Початковий тон:"
+
+msgid "End hue:"
+msgstr "Кінцевий тон:"
+
+msgid "Preview:"
+msgstr "Попередній перегляд:"
+
+msgid "Bars settings"
+msgstr "Налаштування смуг"
+
+msgid "Sensitivity:"
+msgstr "Чутливість:"
+
+msgid "Number of bars:"
+msgstr "Кількість смуг:"
+
+msgid "Bar spacing (px):"
+msgstr "Відстань між смугами (px):"
+
+msgid "Bar corner radius:"
+msgstr "Радіус кутів смуг:"
+
+msgid "Min height (%):"
+msgstr "Мінімальна висота (%):"
+
+msgid "Idle breathing animation:"
+msgstr "Анімація дихання в режимі очікування:"
+
+msgid "Animation speed (ms):"
+msgstr "Швидкість анімації (мс):"
+
+msgid "Wave settings"
+msgstr "Налаштування хвилі"
+
+msgid "Width (px):"
+msgstr "Ширина (px):"
+
+msgid "Line thickness (px):"
+msgstr "Товщина лінії (px):"
+
+msgid "Wave frequency:"
+msgstr "Частота хвилі:"
+
+msgid "Amplitude (%):"
+msgstr "Амплітуда (%):"
+
+msgid "Wave speed (ms):"
+msgstr "Швидкість хвилі (мс):"
+
+msgid "Fill under wave:"
+msgstr "Заповнити під хвилею:"
+
+msgid "Pulse settings"
+msgstr "Налаштування пульсу"
+
+msgid "Number of rings:"
+msgstr "Кількість кілець:"
+
+msgid "Ring thickness (px):"
+msgstr "Товщина кілець (px):"
+
+msgid "Pulse speed (ms):"
+msgstr "Швидкість пульсу (мс):"
+
+msgid "Dots settings"
+msgstr "Налаштування крапок"
+
+msgid "Number of dots:"
+msgstr "Кількість крапок:"
+
+msgid "Dot size (px):"
+msgstr "Розмір крапок (px):"
+
+msgid "Dot spacing (px):"
+msgstr "Відстань між крапками (px):"
+
+msgid "Bounce amplitude (%):"
+msgstr "Амплітуда стрибка (%):"
+
+msgid "Bounce speed (ms):"
+msgstr "Швидкість стрибка (мс):"
+
+msgid "Waveform settings"
+msgstr "Налаштування хвильової форми"
+
+#~ msgid "Start diarization"
+#~ msgstr "Почати діаризацію"
+
+#~ msgid "Stop diarization"
+#~ msgstr "Зупинити діаризацію"
+
+#~ msgid "Diarization"
+#~ msgstr "Діаризація"
+
+#~ msgid "Post-processing..."
+#~ msgstr "Постобробка..."
+
+#~ msgid "Configure post-processing rules (regex, dictionary, continuation)"
+#~ msgstr "Налаштувати правила постобробки (regex, словник, продовження)"
+
+#~ msgid "Audio input level"
+#~ msgstr "Рівень аудіовходу"
+
+#~ msgid "Dictée not installed — install dictee package"
+#~ msgstr "Dictée не встановлено — встановіть пакет dictee"
+
+#~ msgid "Not configured — click Configure Dictée below"
+#~ msgstr "Не налаштовано — натисніть «Налаштувати Dictée» нижче"
+
+#~ msgid "Reset"
+#~ msgstr "Скинути"
+
+#~ msgid "Preview"
+#~ msgstr "Попередній перегляд"
+
+#~ msgid "Show live microphone animation preview"
+#~ msgstr "Показати попередній перегляд анімації мікрофона в реальному часі"
+
+#~ msgid "Click to mute microphone"
+#~ msgstr "Натисніть, щоб вимкнути мікрофон"
+
+#~ msgid "Voice dictation"
+#~ msgstr "Голосовий диктант"
+
+#~ msgid "Dictation + Translation"
+#~ msgstr "Диктант + Переклад"
+
+#~ msgid "Cancel recording"
+#~ msgstr "Скасувати запис"
+
+#~ msgid "Preview (mic test)"
+#~ msgstr "Попередній перегляд (тест мікрофона)"

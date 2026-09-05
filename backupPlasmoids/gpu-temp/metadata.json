@@ -1,0 +1,15 @@
+{
+  "KPlugin": {
+    "Id": "gpu-temp",
+    "Name": "GPU Stats NVIDIA",
+    "Description": "GPU monitor using nvidia-smi",
+    "Version": "1.0",
+    "Category": "System Information",
+    "License": "MIT",
+    "EnabledByDefault": true
+  },
+  "KPackageStructure": "Plasma/Applet",
+  "KPluginType": "Applet",
+  "X-Plasma-MainScript": "ui/main.qml",
+  "X-Plasma-API-Minimum-Version": "6.0"
+}

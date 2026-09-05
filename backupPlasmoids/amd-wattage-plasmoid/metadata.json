@@ -1,0 +1,9 @@
+{
+  "KPlugin": {
+    "Id": "amd-wattage-plasmoid",
+    "Name": "AMD CPU Wattage",
+    "Description": "Display AMD CPU wattage using turbostat"
+  },
+  "X-Plasma-API": "declarativeappletscript",
+  "X-Plasma-MainScript": "ui/main.qml"
+}
